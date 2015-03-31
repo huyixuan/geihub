@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#EEEEEE">
+    
+    
+<LinearLayout	android:id="@+id/overstate"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:background="#F0763A">
+        
+        <ImageView android:id="@+id/man"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shou_03"/>
+        
+        <LinearLayout android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_weight="4"
+            android:gravity="center_vertical"            
+            android:orientation="horizontal">
+            
+            <EditText android:id="@+id/rach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              
+                android:background="@null"
+                android:hint="输入搜索的内容"
+                android:layout_marginLeft="35dip"
+                android:drawableLeft="@drawable/dd_08"                
+                android:drawablePadding="5dip"
+                 android:textColorHint="#ffffff"
+ 			/>
+
+        </LinearLayout>
+        
+        <ImageView android:id="@+id/install"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shou_05"/>
+    </LinearLayout>    
+    
+    
+	<include layout="@layout/main_forum_pic"/>
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+    </ListView>
+  
+</LinearLayout>
